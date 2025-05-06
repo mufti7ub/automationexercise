@@ -27,7 +27,7 @@ public class UserLogin extends baseClass {
 	@When("User enters valid credentials email")
 	public void user_enters_valid_credentials_email() {
 		String email = emailhelper.getUniqueEmail();  // returns the same one
-		System.out.println("login: "+email);
+		System.out.println("logged in email is: "+email);
 		entryValue(userloginpo.loginemail, email);
 
 	}
