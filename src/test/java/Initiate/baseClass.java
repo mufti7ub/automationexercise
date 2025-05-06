@@ -1,13 +1,18 @@
 package Initiate;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -142,5 +147,17 @@ public class baseClass {
 		((JavascriptExecutor) driver).executeScript(
 				"arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", driver.findElement(element));
 	}
+	
+	public  String captureScreenshot(WebDriver driver, String scenarioName) {
+        String screenshotPath = "target/screenshots/" + scenarioName + "_" + System.currentTimeMillis() + ".png";
+        File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        File dest = new File(screenshotPath);
+        try {
+            FileUtils.copyFile(src, dest);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return screenshotPath;
+    }
 
 }

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue May 06 18:24:23 IST 2025</td>
+<td>Started on:</td><td>Tue May 06 18:52:06 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>28 seconds (28746 ms)</td>
+<tr><td>Total time:</td><td>19 seconds (19686 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,48 +76,34 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: Runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successful login with valid credentials", "User Login"</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //a[contains (text(),&apos; Logged in as &apos;)] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.49, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\asife\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:4712}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:4712/devtool..., se:cdpVersion: 136.0.7103.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5448fa412f75458f4e3477bc4fc61e05
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at Initiate.baseClass.visibilityOfElement(baseClass.java:92)
-	at StepDefinitions.UserLogin.user_should_be_redirected_to_the_homepage(UserLogin.java:49)
-	at ✽.User should be redirected to the homepage(file:///C:/Users/asife/eclipse-workspace/TestIngExcerciseAutomation/src/test/java/features/2.UserLogin.feature:31)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1212098670", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1212098670'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //a[contains (text(),&apos; Logged in as &apos;)] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.49, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\asife\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:4712}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:4712/devtool..., se:cdpVersion: 136.0.7103.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5448fa412f75458f4e3477bc4fc61e05
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at Initiate.baseClass.visibilityOfElement(baseClass.java:92)
-	at StepDefinitions.UserLogin.user_should_be_redirected_to_the_homepage(UserLogin.java:49)
-	at ✽.User should be redirected to the homepage(file:///C:/Users/asife/eclipse-workspace/TestIngExcerciseAutomation/src/test/java/features/2.UserLogin.feature:31)
-</pre></div></td>
-<td>21</td>
-<td>Runner.RunnerClass@609cd4d8</td></tr>
-<tr>
 <td title='Runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: Runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User try to complete registration step  by step", "User Registration"</td>
 <td><div><pre>java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:87)
 	at org.junit.Assert.fail(Assert.java:96)
-	at StepDefinitions.UserRegistration.user_selects_radio_button_mr(UserRegistration.java:53)
-	at ✽.User selects radio button Mr.(file:///C:/Users/asife/eclipse-workspace/TestIngExcerciseAutomation/src/test/java/features/1.UserRegistration.feature:17)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1487884406", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1487884406'><pre>java.lang.AssertionError
+	at StepDefinitions.UserRegistration.able_to_see_log_out_in_header_menu(UserRegistration.java:163)
+	at ✽.Able to see Log Out in header menu(file:///C:/Users/asife/eclipse-workspace/TestIngExcerciseAutomation/src/test/java/features/1.UserRegistration.feature:37)
+</pre></div><a href='#' onClick='toggleBox("stack-trace685193713", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace685193713'><pre>java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:87)
 	at org.junit.Assert.fail(Assert.java:96)
-	at StepDefinitions.UserRegistration.user_selects_radio_button_mr(UserRegistration.java:53)
-	at ✽.User selects radio button Mr.(file:///C:/Users/asife/eclipse-workspace/TestIngExcerciseAutomation/src/test/java/features/1.UserRegistration.feature:17)
+	at StepDefinitions.UserRegistration.able_to_see_log_out_in_header_menu(UserRegistration.java:163)
+	at ✽.Able to see Log Out in header menu(file:///C:/Users/asife/eclipse-workspace/TestIngExcerciseAutomation/src/test/java/features/1.UserRegistration.feature:37)
 </pre></div></td>
-<td>6</td>
+<td>11</td>
+<td>Runner.RunnerClass@609cd4d8</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: Runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successful login with valid credentials", "User Login"</td>
+<td></td>
+<td>7</td>
 <td>Runner.RunnerClass@609cd4d8</td></tr>
 </table><p>
 </body>

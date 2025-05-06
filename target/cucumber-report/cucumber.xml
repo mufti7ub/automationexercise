@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="27.789" tests="2" skipped="0" failures="2" errors="0" timestamp="2025-05-06T12:54:24.365621300Z">
-<testcase classname="User Registration" name="User try to complete registration step  by step" time="6.066">
+<testsuite name="Cucumber" time="18.717" tests="2" skipped="0" failures="1" errors="0" timestamp="2025-05-06T13:22:07.449712200Z">
+<testcase classname="User Registration" name="User try to complete registration step  by step" time="11.441">
 <failure type="java.lang.AssertionError">
 <![CDATA[java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:87)
 	at org.junit.Assert.fail(Assert.java:96)
-	at StepDefinitions.UserRegistration.user_selects_radio_button_mr(UserRegistration.java:53)
-	at ✽.User selects radio button Mr.(file:///C:/Users/asife/eclipse-workspace/TestIngExcerciseAutomation/src/test/java/features/1.UserRegistration.feature:17)
+	at StepDefinitions.UserRegistration.able_to_see_log_out_in_header_menu(UserRegistration.java:163)
+	at ✽.Able to see Log Out in header menu(file:///C:/Users/asife/eclipse-workspace/TestIngExcerciseAutomation/src/test/java/features/1.UserRegistration.feature:37)
 ]]>
 </failure>
 <system-out><![CDATA[
@@ -18,51 +18,32 @@ And User enters email.......................................................pass
 And User clicks on Sign Up button...........................................passed
 And User should be redirected to next page of registration..................passed
 And able to see other fields to be required to complete sign up.............passed
-And User selects radio button Mr............................................failed
-And User enters password <"Test@123">.......................................skipped
-And User selcts DOB.........................................................skipped
-And Tick marked on newsletter...............................................skipped
-And tick marked on offers subscrption.......................................skipped
-And User enter first name <"Ron">...........................................skipped
-And User enters last name <"Jr.">...........................................skipped
-And User enters Company <"Al Nassr">........................................skipped
-And User enters address <"add1, Club1">.....................................skipped
-And User enters address2 <"add2, Club2">....................................skipped
-And Country is selected as India............................................skipped
-And User enters State <"WB">................................................skipped
-And User enters city <"Calcutta">...........................................skipped
-And User enters zipcode <"700001">..........................................skipped
-And User enters mobile <"7000000001">.......................................skipped
-And User clicked on Create Account button...................................skipped
-And User should be redirected to Account Created page.......................skipped
-And Able to see the confirmation page with texts............................skipped
-And User clicked on Continue button.........................................skipped
-Then User should be redirected to dashboard.................................skipped
-And Able to see Log Out in header menu......................................skipped
+And User selects radio button Mr............................................passed
+And User enters password <"Test@123">.......................................passed
+And User selcts DOB.........................................................passed
+And Tick marked on newsletter...............................................passed
+And tick marked on offers subscrption.......................................passed
+And User enter first name <"Ron">...........................................passed
+And User enters last name <"Jr.">...........................................passed
+And User enters Company <"Al Nassr">........................................passed
+And User enters address <"add1, Club1">.....................................passed
+And User enters address2 <"add2, Club2">....................................passed
+And Country is selected as India............................................passed
+And User enters State <"WB">................................................passed
+And User enters city <"Calcutta">...........................................passed
+And User enters zipcode <"700001">..........................................passed
+And User enters mobile <"7000000001">.......................................passed
+And User clicked on Create Account button...................................passed
+And User should be redirected to Account Created page.......................passed
+And Able to see the confirmation page with texts............................passed
+And User clicked on Continue button.........................................passed
+Then User should be redirected to dashboard.................................passed
+And Able to see Log Out in header menu......................................failed
 And Able to see Delete Acount in header menu................................skipped
 But Login/Sign Up is not there..............................................skipped
 ]]></system-out>
 </testcase>
-<testcase classname="User Login" name="Successful login with valid credentials" time="21.476">
-<failure type="org.openqa.selenium.TimeoutException" message="Expected condition failed: waiting for visibility of element located by By.xpath: //a[contains (text(),' Logged in as ')] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.31.0', revision: '1ef9f18787*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.49, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\asife\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:4712}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:4712/devtool..., se:cdpVersion: 136.0.7103.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5448fa412f75458f4e3477bc4fc61e05">
-<![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //a[contains (text(),' Logged in as ')] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.31.0', revision: '1ef9f18787*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.49, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\asife\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:4712}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:4712/devtool..., se:cdpVersion: 136.0.7103.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5448fa412f75458f4e3477bc4fc61e05
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at Initiate.baseClass.visibilityOfElement(baseClass.java:92)
-	at StepDefinitions.UserLogin.user_should_be_redirected_to_the_homepage(UserLogin.java:49)
-	at ✽.User should be redirected to the homepage(file:///C:/Users/asife/eclipse-workspace/TestIngExcerciseAutomation/src/test/java/features/2.UserLogin.feature:31)
-]]>
-</failure>
+<testcase classname="User Login" name="Successful login with valid credentials" time="7.052">
 <system-out><![CDATA[
 Given User is on the homepage...............................................passed
 When User click on Sign Up & Login from header..............................passed
@@ -70,7 +51,7 @@ Given User is on the login page.............................................pass
 When User enters valid credentials email....................................passed
 And User enters valid credentials password <"Test@123">.....................passed
 And User clicks on Login button.............................................passed
-Then User should be redirected to the homepage..............................failed
+Then User should be redirected to the homepage..............................passed
 ]]></system-out>
 </testcase>
 </testsuite>
